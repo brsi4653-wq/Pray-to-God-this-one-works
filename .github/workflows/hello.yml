@@ -1,0 +1,10 @@
+# A tiny test job with no history and no connection to the site.
+name: Hello test
+on:
+  push:
+    branches: [fresh-test]
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello"
